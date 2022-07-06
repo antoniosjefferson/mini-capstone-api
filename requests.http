@@ -1,0 +1,42 @@
+### Products Index
+GET http://localhost:3000/all_products.json
+
+### Products Show
+
+GET http://localhost:3000/products/3.json
+
+### Products Create
+
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "Draymond Green Jersey",
+  "price": 80,
+  "image_url": "https://woos.s3.amazonaws.com/wp-content/uploads/2022/06/08155332/1654411332d37720f164.jpeg",
+  "description": "Black Draymond Green Jersey # 23"
+}
+
+### 2nd Create
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "Black Gold Blooded Tshirt",
+  "price": 35,
+  "image_url": "https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_4910000/altimages/ff_4910471-2ae247022620a719b81aalt1_full.jpg&w=900",
+  "description": "Black Gold Blooded 2022 Championship Tshirt"
+}
+
+### Products Update
+
+PATCH http://localhost:3000/products/9.json
+Content-Type: application/json
+
+{
+  "name" : "Clay Thompson Jersey"
+}
+
+### Products Destroy 
+DELETE http://localhost:3000/products/6.json
+
