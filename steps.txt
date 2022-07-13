@@ -1,0 +1,5 @@
+1. Create a user
+2. Make a sign up (POST) web request
+3. Make a session login (POST) web requests
+4. Copy the authorization key
+5. Make a (GET) web request using the authorization key from step 4 after Bearer

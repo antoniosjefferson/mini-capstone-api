@@ -1,5 +1,6 @@
 ### Products Index
 GET http://localhost:3000/all_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc3MzU2MzV9.ck33JcxhA98EUy1vELuRm3i_KNPqdhKFGkITEcB4TZI
 
 ### Products Show
 
@@ -40,3 +41,55 @@ Content-Type: application/json
 ### Products Destroy 
 DELETE http://localhost:3000/products/6.json
 
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Walter White",
+  "email": "heisenberg@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### 2nd Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Gustavo Fring",
+  "email": "loshermanos@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "heisenberg@example.com",
+  "password": "password"
+}
+
+### Sessions create
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "heisenberg@example.com",
+  "password": "password"
+}
+
+### Order Create
+POST http://localhost:3000/orders.json
+Content-Type: application/json  
+
+# {
+#   "user_id": "12",
+#   "product_id": "2",
+#   "quantity": "10",
+#   "subtotal": "30",
+#   "tax": "3",
+#   "total": "33",
+# }
