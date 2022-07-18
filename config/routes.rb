@@ -19,4 +19,7 @@ Rails.application.routes.draw do
 
   #order create
   post "/orders" => "orders#create"
+
+  #carted_products create
+  post "/carted_products" => "carted_products#create"
 end

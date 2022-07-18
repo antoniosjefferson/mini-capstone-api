@@ -1,7 +1,9 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_admin
+  before_action :authenticate_user
+
   def create
-    if current_user
-      order = Order.new(
+    order = Order.new(
       user_id: params[:user_id],
       product_id: params[:product_id],
       quantity: params[:quantity],
@@ -9,10 +11,7 @@ class OrdersController < ApplicationController
       tax: params[:tax],
       total: params[:total],
     )
-      order.save
-      render json: order.as_json
-    else
-      render json: []
-
+    order.save
+    render json: order
   end
 end
