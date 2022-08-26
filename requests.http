@@ -83,7 +83,7 @@ Content-Type: application/json
 
 ### Order Create
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjU5NzR9.WC7j79WCUqEIFs34wEbSSDJH1JC7YZt6iq3gG5gmGJg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTk1NTIxNTd9.SqDBwxvtf9XGArcVQl0R0mMHxutu09f_hD0EVESAs-c
 Content-Type: application/json  
 
 {
@@ -108,5 +108,3 @@ Content-Type: application/json
   "status": 30,
   "order_id": 3
 }
-
-# eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgyNTU3MTZ9.pT7aU0J1_1sp44bzSZ1alWnLBLwOvHbW5mYsCL_Do6I
